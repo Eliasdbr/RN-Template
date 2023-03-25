@@ -18,7 +18,7 @@ You can find all the included dependencies in the `package.json` file.
 	```
 2. Pods for iOS:
 	```
-	cd ios ; pod install ; cd ..
+	yarn pod-install
 	```
 
 ***
