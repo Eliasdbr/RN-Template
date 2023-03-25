@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.edb.hexabank"
+    namespace "com.eliasdbr.rntemplate"
     defaultConfig {
-        applicationId "com.edb.hexabank"
+        applicationId "com.eliasdbr.rntemplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

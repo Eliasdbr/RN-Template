@@ -1,4 +1,4 @@
-package com.edb.hexabank;
+package com.eliasdbr.rntemplate;
 
 import android.os.Bundle; // Splash screeen dependency
 import com.facebook.react.ReactActivity;
@@ -15,7 +15,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "HexaBank";
+    return "RN-Template";
   }
 
   /**

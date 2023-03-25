@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/hexagon/projects/EDB/Hexathon2023/ios/HexaBank.xcodeproj">
+      location = "group:/Users/hexagon/projects/EDB/Hexathon2023/ios/RNTemplate.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:HexaBank.xcodeproj">
+      location = "group:RNTemplate.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,4 +1,4 @@
-package com.edb.hexabank;
+package com.eliasdbr.rntemplate;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
