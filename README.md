@@ -2,7 +2,7 @@
 
 ## 📝 Description
 
-This is a React Native 0.73 template project with some functionalities included like screen navigation, pre-installed icon library, some styles and components, etc.
+This is a React Native 0.71.3 template project with some functionalities included like screen navigation, pre-installed icon library, some styles and components, etc.
 
 The objective of this project is to save the developer from building all the boilerplate needed to run a basic React Native App.
 
