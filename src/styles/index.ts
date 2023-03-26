@@ -105,6 +105,14 @@ export const bgColor = (colorValue: ColorValue): ViewStyle => {
 }
 
 /**
+ * Set width
+ */
+export const w = (value: string | number): ViewStyle => ({width: value});
+/**
+ * Set height
+ */
+export const h = (value: string | number): ViewStyle => ({height: value});
+/**
  * Set margin
  */
 export const m = (value: number): ViewStyle => ({margin: value});

@@ -8,11 +8,10 @@ import {
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import { colors, layout } from '../styles/styles';
+import { colors, layout } from '../styles';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import SignIn from '../screens/SignIn/SignIn';
 import Home from '../screens/Home/Home';
-import { ParamListBase } from '@react-navigation/native';
 import Settings from '../screens/Settings/Settings';
 // Bottom Tab Navigator
 export type MainNavigatorParamList = {
@@ -26,7 +25,7 @@ export type MainNavigatorParamList = {
 const MainTab = createBottomTabNavigator<MainNavigatorParamList>();
 
 const MainView: React.FC<PropsWithChildren> = ({children}: PropsWithChildren)  => {
-	const isDarkMode = useColorScheme() === 'dark';
+	// const isDarkMode = useColorScheme() === 'dark';
 	const colorScheme = useColorScheme() || 'light';
 	const insets = useSafeAreaInsets();
 

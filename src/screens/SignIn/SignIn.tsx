@@ -7,10 +7,12 @@ import {
 	useColorScheme, 
 	View
 } from "react-native";
-import Divider from "../../components/Divider/Divider";
+import Divider from "../../components/atoms/Divider";
+import Panel from "../../components/atoms/Panel";
+import Layout from "../../components/layout/Layout";
 import { MainNavigatorParamList } from "../../navigation/MainNaviagator";
 
-import {bgColor, colors, fonts, layout, m, mx, my} from '../../styles/styles';
+import {bgColor, colors, fonts, layout, m, mx, my} from '../../styles';
 
 export type SignInNavigationProp = BottomTabNavigationProp<
   MainNavigatorParamList,
@@ -44,6 +46,11 @@ const SignIn: React.FC = () => {
 					navigate('Home', {});
 				}}
 			/>
+			<Layout.Full grow={1}>
+				<Layout.V>
+					<Panel full/>
+				</Layout.V>
+			</Layout.Full>
 		</View>
 	);
 }
