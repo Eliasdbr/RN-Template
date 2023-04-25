@@ -70,6 +70,10 @@ export const fonts: StylesFontType = {
 			color: colors.light.text,
 			margin: 8,
 		},
+		normal: {
+			fontSize: 18,
+			color: colors.light.text,
+		},
 	},
 	dark: {
 		p: {
@@ -82,6 +86,10 @@ export const fonts: StylesFontType = {
 			fontWeight: 'bold',
 			color: colors.dark.text,
 			margin: 8,
+		},
+		normal: {
+			fontSize: 16,
+			color: colors.dark.text,
 		},
 	},
 }
@@ -140,3 +148,7 @@ export const py = (value: number): ViewStyle => ({paddingVertical: value});
  * Custom flex value
  */
 export const flex = (value: number): ViewStyle => ({flex: value});
+/**
+ * Border radius
+ */
+export const radius = (value: number): ViewStyle => ({borderRadius: value});

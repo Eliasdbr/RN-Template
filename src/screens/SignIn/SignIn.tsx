@@ -8,6 +8,7 @@ import {
 	View
 } from "react-native";
 import Divider from "../../components/atoms/Divider";
+import Input from "../../components/atoms/Input";
 import Panel from "../../components/atoms/Panel";
 import Layout from "../../components/layout/Layout";
 import { MainNavigatorParamList } from "../../navigation/MainNaviagator";
@@ -47,9 +48,7 @@ const SignIn: React.FC = () => {
 				}}
 			/>
 			<Layout.Full grow={1}>
-				<Layout.V>
-					<Panel full/>
-				</Layout.V>
+				<Input type="password"/>
 			</Layout.Full>
 		</View>
 	);
