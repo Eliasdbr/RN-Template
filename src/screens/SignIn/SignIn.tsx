@@ -48,7 +48,7 @@ const SignIn: React.FC = () => {
 				}}
 			/>
 			<Layout.Full grow={1}>
-				<Input type="password"/>
+				<Input />
 			</Layout.Full>
 		</View>
 	);

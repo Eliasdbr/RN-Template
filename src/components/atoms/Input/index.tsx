@@ -25,6 +25,7 @@ export type InputProps = {
 	type?: KeyboardTypeOptions | 'password',
 	maxLength?: number,
 	placeholder?: string,
+	charactersToFilter?: string,
 };
 
 /**
@@ -34,13 +35,20 @@ const Input: React.FC<InputProps> = ({
 	type = 'default',
 	maxLength = 255,
 	placeholder,
+	charactersToFilter,
 }) => {
 	const colorScheme = useColorScheme() || 'light';
 	const [text, setText] = useState<string>('');
 
 	const curateInput = (value: string) => {
+		let curatedValue = value;
 
-		setText(value);
+		if (charactersToFilter) {
+			const replaceRegex = new RegExp(`[${charactersToFilter}]`,'g');
+			curatedValue = curatedValue.replace(replaceRegex, '');
+		}
+
+		setText(curatedValue);
 	}
 
 	return <TextInput 
