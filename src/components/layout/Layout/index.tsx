@@ -4,7 +4,7 @@ import {
 	View,
 } from "react-native";
 
-import { LayoutProps } from "./types";
+import { LayoutProps, LayoutSubComponents } from "./types";
 
 import H from "./H";
 import V from "./V";
@@ -17,7 +17,7 @@ import Center from "./Center";
  * Main Layout wrapper.
  * It can be used alone with its properties, or as a class with its children
  */
-const Layout: React.FC<LayoutProps> = ({
+const Layout: React.FC<LayoutProps> & LayoutSubComponents = ({
 	grow = 1,
 	direction = 'column',
 	justify,
@@ -41,9 +41,11 @@ const Layout: React.FC<LayoutProps> = ({
 	);
 }
 
-export default {
-	Layout,
-	H, V,
-	Full,
-	HMiddle, VMiddle, Center,
-};
+Layout.H = H;
+Layout.V = V;
+Layout.HMiddle = HMiddle;
+Layout.VMiddle = VMiddle;
+Layout.Full = Full;
+Layout.Center = Center;
+
+export default Layout;

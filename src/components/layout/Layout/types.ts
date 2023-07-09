@@ -8,6 +8,18 @@ import {
 } from "react-native/types";
 
 /**
+ * Layout sub-components
+ */
+export type LayoutSubComponents = {
+	H?: React.FC<React.PropsWithChildren>,
+	V?: React.FC<React.PropsWithChildren>,
+	Full?: React.FC<FullLayoutProps>,
+	HMiddle?: React.FC<React.PropsWithChildren>,
+	VMiddle?: React.FC<React.PropsWithChildren>,
+	Center?: React.FC<React.PropsWithChildren>,
+}
+
+/**
  * Layout component properties
  */
 export type LayoutProps = {
@@ -22,7 +34,7 @@ export type LayoutProps = {
 	px?: number,
 	py?: number,
 	style?: ViewStyle,
-} & React.PropsWithChildren;
+} & React.PropsWithChildren & LayoutSubComponents;
 
 /**
  * Full layout component types

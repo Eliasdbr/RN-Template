@@ -47,9 +47,9 @@ const SignIn: React.FC = () => {
 					navigate('Home', {});
 				}}
 			/>
-			<Layout.Full grow={1}>
+			<Layout grow={1}>
 				<Input />
-			</Layout.Full>
+			</Layout>
 		</View>
 	);
 }
